@@ -3,7 +3,7 @@
 /**
  * main - Entry Point
  * No Description
- * return: 0 (success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
@@ -13,8 +13,8 @@ for (x = 0; x < 10; x++)
 {
 for (y = 0; y < 10; y++)
 {
-putchar(x);
-putchar(y);
+putchar(x + '0');
+putchar(y + '0');
 putchar(',');
 putchar(' ');
 }
