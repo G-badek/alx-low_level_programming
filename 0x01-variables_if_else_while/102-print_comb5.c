@@ -19,15 +19,18 @@ for (y = 0; y < 10; y++)
 {
 for (z = 0; z < 10; z++)
 {
+if ((w + x + y + z) != 0)
+{
 putchar(w + '0');
 putchar(x + '0');
 putchar(' ');
 putchar(y + '0');
 putchar(z + '0');
-if ((w+x+y+z) < 36)
+if ((w + x + y + z) < 36)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
