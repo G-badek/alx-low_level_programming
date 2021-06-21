@@ -11,7 +11,7 @@ int x;
 int y;
 for (x = 0; x < 10; x++)
 {
-for (y = 1; y < 10; y++)
+for (y = x + 1; y < 10; y++)
 {
 if (x != y)
 {
