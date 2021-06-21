@@ -26,7 +26,7 @@ putchar(x + '0');
 putchar(' ');
 putchar(y + '0');
 putchar(z + '0');
- if ((w + x) < 17 && (w > x))
+if ((w + x) < 17 || (w < x))
 {
 putchar(',');
 putchar(' ');
