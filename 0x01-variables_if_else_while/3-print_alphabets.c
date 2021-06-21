@@ -12,10 +12,9 @@ for (x = 'a'; x <= 'z'; x++)
 {
 putchar(x);
 }
-int y;
-for (y = 'A'; y <= 'Z'; y++)
+for (x = 'A'; x <= 'Z'; x++)
 {
-  putchar(y);
+putchar(x);
 }
 putchar('\n');
 return (0);
