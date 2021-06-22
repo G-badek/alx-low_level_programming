@@ -10,7 +10,8 @@ int _abs(int n)
 {
 if (n < 0)
 {
-return (abs(n));
+int i = (-1 * n);
+return (i);
 }
 else
 {
