@@ -1,1 +1,2 @@
-printf("Holberton\n");
+char name[] = Holberton;
+printf("%s\n", name);
