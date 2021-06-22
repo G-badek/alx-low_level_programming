@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * jack_bauer -  prints every minute of the day of Jack Bauer, sta  * ting from 00:00 to 23:59.
+ * jack_bauer -  prints every minute of the day of Jack Bauer
  *
  * Return: void
  */
