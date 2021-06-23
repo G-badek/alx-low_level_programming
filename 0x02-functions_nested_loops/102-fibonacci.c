@@ -7,17 +7,15 @@
  */
 int main(void)
 {
-int a = 1;
+int a = 0;
 int b = 1;
 int c = 1;
-int i = 0;
-while (i < 50)
+while (c <= 20365011074)
 {
+printf("%d, ", c);
 a = b;
 b = c;
 c = a + b;
-printf("%d, ", c);
-i++;
 }
 printf("\n");
 return (0);
