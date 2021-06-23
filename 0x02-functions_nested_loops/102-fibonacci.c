@@ -10,8 +10,10 @@ int main(void)
 int a = 0;
 int b = 1;
 int c = 0;
-while (c < 50)
+int i = 0;
+while (i < 50)
 {
+i++;
 a = b;
 b = c;
 c = a + b;
