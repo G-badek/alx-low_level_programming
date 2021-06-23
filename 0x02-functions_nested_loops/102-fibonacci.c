@@ -9,15 +9,15 @@ int main(void)
 {
 int a = 1;
 int b = 1;
-int c = 0;
+int c = 1;
 int i = 0;
 while (i < 50)
 {
-i++;
 a = b;
 b = c;
 c = a + b;
 printf("%d, ", c);
+i++;
 }
 printf("\n");
 return (0);
