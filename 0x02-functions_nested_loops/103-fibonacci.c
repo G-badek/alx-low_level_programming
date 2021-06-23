@@ -1,8 +1,8 @@
 #include <stdio.h>
-  
+
 /**
  * main - write a program that finds and prints the sum
- *                                                    
+ *
  * Return: void
  */
 int main(void)
