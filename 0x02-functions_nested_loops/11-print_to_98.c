@@ -25,8 +25,6 @@ _putchar(',');
 _putchar(' ');
 }
 }
-else
-{
-putchar(n);
-}
+_putchar(n);
+_putchar('\n');
 }
