@@ -7,11 +7,11 @@
  */
 int main(void)
 {
+int i;
 int a = 0;
 int b = 1;
-int c = 1;
-while (c <= 20365011074)
-{
+int c = 0;
+for (i = 1; i <= 50; ++i) {
 printf("%d, ", c);
 a = b;
 b = c;
