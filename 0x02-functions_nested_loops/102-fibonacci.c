@@ -8,14 +8,13 @@
 int main(void)
 {
 int i;
-int a = 0;
-int b = 1;
-int c = 0;
-for (i = 1; i <= 50; ++i) {
-printf("%d, ", c);
+unsigned long a = 0, b = 1, c;
+for (i = 1; i <= 50; ++i)
+{
+c = a + b;
+printf("%lu, ", c);
 a = b;
 b = c;
-c = a + b;
 }
 printf("\n");
 return (0);
