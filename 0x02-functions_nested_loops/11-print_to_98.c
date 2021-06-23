@@ -13,7 +13,7 @@ if(j >= 0)
 {
 for (i = n; i < j; i++)
 {
-_putchar(i);
+_putchar(n);
 _putchar(',');
 _putchar(' ');
 }
@@ -22,7 +22,7 @@ else
 {
 for (i = n; i > j; i--)
 {
-_putchar(i);
+_putchar(n);
 _putchar(',');
 _putchar(' ');
 } 
