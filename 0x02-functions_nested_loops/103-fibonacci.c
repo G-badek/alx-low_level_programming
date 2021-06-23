@@ -19,6 +19,6 @@ res += c;
 a = b;
 b = c;
 }
-printf("%lu", res);
+printf("%lu\n", res);
 return (0);
 }
