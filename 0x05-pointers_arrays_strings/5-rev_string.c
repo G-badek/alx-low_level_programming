@@ -13,8 +13,8 @@ while (s[len] != '\0')
 {
 len++;
 }
-for (i = 0; i < len; i++)
+for (i = 0; i < 400; i++)
 {
-s[i] = s[len - i];
+s[i] = s[400 - i];
 }
 }
