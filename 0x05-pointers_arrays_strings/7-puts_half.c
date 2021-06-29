@@ -22,7 +22,7 @@ printf("%c", str[i]);
 }
 else
 {
-for (i = (len - 1) / 2; i < len; i++)
+for (i = (len - 2) / 2; i < len; i++)
 {
 printf("%c", str[i]);
 }
