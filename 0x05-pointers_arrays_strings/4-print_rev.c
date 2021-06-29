@@ -23,22 +23,16 @@ return (i);
  */
 void print_rev(char *s)
 {
-int length, c;
-char *begin, *end, temp;
-length = _strlen(s);
-begin = s;
-end = s;
-for (c = 0; c < length - 1; c++ )
+int c = _strlen(s), i, lind, rind;
+char temp;
+lind = 0;
+rind = c - 1;
+for (i = lind; i < rind; i++)
 {
-end++;
-for (c = 0; c < length / 2; c++)
-{
-temp = *begin;
-*begin = *end;
-*end = temp;
-begin++;
-end--;
-}
+temp = s[i];
+s[i] = s[rind];
+s[rind] = temp;
+rind--;
 }
 printf("\n");
 }
