@@ -16,12 +16,10 @@ lenD++;
 }
 while (src[lenS] != '\0')
 {
+dest[lenD] = src[lenS];
+lenD++
 lenS++;
 }
-for (i = 0; i < lenS; i++)
-{
-dest[lenD + i] = src[i];
-}
-dest[lenD + i++] = src[i++];
+dest[lenD] = '\0';
 return (dest);
 }
