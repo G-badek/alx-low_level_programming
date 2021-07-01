@@ -15,7 +15,7 @@ a[0] = a[0] - 32;
 }
 for (i = 0; a[i] != '\0'; i++)
 {
-switch (n[i])
+switch (a[i])
 {
 case ',':
 case ';':
@@ -28,11 +28,11 @@ case ')':
 case '{':
 case '}':
 case ' ':
-case '\t':
 case '\n':
-if (n[i + 1] > 96 && n[i + 1] < 123)
+case '\t':
+if (a[i + 1] > 96 && a[i + 1] < 123)
 {
-n[i + 1] = n[i + 1] - 32;
+a[i + 1] = a[i + 1] - 32;
 }
 }
 }
