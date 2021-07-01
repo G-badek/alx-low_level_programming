@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcat - Write a function that concatenates two strings
+ * _strcat - Write a function that concatenates two
  * @src: Source of strings
  * @dest: Where Strings are appended
  * Return: Strings of characters
@@ -10,11 +10,11 @@
 char *_strcat(char *dest, char *src)
 {
 int lenD = 0, lenS = 0, i;
-while (dest[lenD])
+while (dest[lenD] != '\0')
 {
 lenD++;
 }
-while (src[lenS])
+while (src[lenS] != '\0')
 {
 lenS++;
 }
