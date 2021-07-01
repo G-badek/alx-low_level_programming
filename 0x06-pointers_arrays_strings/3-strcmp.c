@@ -21,7 +21,7 @@ else
 dif = s1[i] - s2[i];
 return (dif);
 }
-i++
+i++;
 }
 return (0);
 }
