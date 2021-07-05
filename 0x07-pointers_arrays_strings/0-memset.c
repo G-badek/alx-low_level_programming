@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * _memset - Write a function that fills memory with a constant byte.
+ * memset - Write a function that fills memory.
  * @s: strings of character
  * @b: strings of character
  * @n: an integer
- * Return: A poimter to the memory area
+ * Return: A poin<F11>ter to the memory area
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int index;
-unsigned char *memory = s, value = c;
-for (index = 0; index < n; index++)
+unsigned int i;
+char *memory = s;
+for (i = 0; i < n; i++)
 {
-memory[index] = value;
+*s++ = b;
 }
 return (memory);
 }
