@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * memset - Write a function that fills memory.
+ * _memset - Write a function that fills memory.
  * @s: strings of character
  * @b: strings of character
  * @n: an integer
