@@ -18,7 +18,7 @@ return (*(s + i));
 i++;
 }
 }
-if (*(s + i))
+if (*(s + i) == c)
 {
 return (*(s + i));
 }
