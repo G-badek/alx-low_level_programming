@@ -16,5 +16,5 @@ for (i = 0; i < n; i++)
 {
 *dest++ = *src++;
 }
-return (start;
+return (start);
 }
