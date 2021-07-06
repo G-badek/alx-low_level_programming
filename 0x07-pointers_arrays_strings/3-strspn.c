@@ -14,11 +14,6 @@ int consistC = 0;
 int prevC;
 while (*s)
 {
-int i;
-int consistC = 0;
-int prevC;
-while (*s)
-{
 i = 0;
 prevC = consistC;
 while (*(accept + i) != '\0')
@@ -33,5 +28,4 @@ break;
 s++;
 }
 return (consistC);
-}
 }
