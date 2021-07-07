@@ -22,14 +22,10 @@ return (sqtRecursive(n - 1, m));
 }
 
 /**
- *
- *  * _sqrt_recursion - finds the natural square root of a number
- *
- *   * @n: given number
- *
- *    * Return: square root of n or -1
- *
- *     **/
+ * _sqrt_recursion - finds the natural square root of a number
+ * @n: given number
+ * Return: square root of n or -1
+ **/
 
 int _sqrt_recursion(int n)
 {
