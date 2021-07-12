@@ -5,7 +5,7 @@
  * main - Prints all arguments including the first one
  * @argc: argument count
  * @argv: argument vector
- * Return: Integer zero
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -16,3 +16,4 @@ printf("%s\n", argv[i]);
 }
 return (0);
 }
+
