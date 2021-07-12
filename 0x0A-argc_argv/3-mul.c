@@ -14,11 +14,10 @@ if (argc <= 2)
 printf("Error\n");
 return (1);
 }
-int i = 1;
-while (--argc)
-{
-i *= *argv++;
-printf("%d\n", i);
-}
+int a, b, res;
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+res = a * b;
+printf("%d\n", res);
 return (0);
 }
