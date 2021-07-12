@@ -6,7 +6,7 @@
  * main - Multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: integer 0 or 1 
+ * Return: integer 0 or 1
  */
 int main(int argc, char *argv[])
 {
@@ -22,4 +22,3 @@ res = a * b;
 printf("%d\n", res);
 return (0);
 }
-
