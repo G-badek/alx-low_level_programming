@@ -1,25 +1,23 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - Multiplies two numbers
+ * main - multipy two numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: integer 0 or 1
+ * Return: multiplication of numbers or 1
  */
 int main(int argc, char *argv[])
 {
-int a, b, res;
+int a, b, result;
 if (argc != 3)
 {
 printf("Error\n");
 return (1);
 }
-/* atoi convert a string to an int */
 a = atoi(argv[1]);
 b = atoi(argv[2]);
-res = a * b;
-printf("%d\n", res);
+result = a * b;
+printf("%d\n", result);
 return (0);
 }
