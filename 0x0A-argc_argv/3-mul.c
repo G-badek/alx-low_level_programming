@@ -17,8 +17,8 @@ return (1);
 int i = 1;
 while (--argc)
 {
-i * *argv++;
-printf("%d", i);
+i *= *argv++;
+printf("%d\n", i);
 }
 return (0);
 }
