@@ -18,6 +18,7 @@ int i = 1;
 while (--argc)
 {
 i * *argv++;
+printf("%d", i);
 }
 return (0);
 }
