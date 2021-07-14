@@ -20,7 +20,8 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-i = j = 0;
+i = 0;
+j = 0;
 while (s1[i] != '\0')
 {
 i++;
@@ -43,7 +44,8 @@ i++;
 while (s2[j] != '\0')
 {
 strDup[i] = s2[j];
-i++, j++;
+i++;
+j++;
 }
 strDup[i] = '\0';
 return (strDup);
