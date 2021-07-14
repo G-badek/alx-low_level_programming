@@ -10,8 +10,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-char *strDup;
-int i, j;
+char *concat_str;
+int index, concat_index = 0, len = 0;
 if (s1 == NULL)
 {
 s1 = "";
@@ -20,33 +20,22 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-i = 0;
-j = 0;
-while (s1[i] != '\0')
+for (index = 0; s1[index] || s2[index]; index++)
 {
-i++;
+len++;
 }
-while (s2[j] != '\0')
-{
-j++;
-}
-strDup = malloc(sizeof(char) * (i + j + 1));
-if (strDup == NULL)
+concat_str = malloc(sizeof(char) * len);
+if (concat_str == NULL)
 {
 return (NULL);
 }
-i = j = 0;
-while (s1[i] != '\0')
+for (index = 0; s1[index]; index++)
 {
-strDup[i] = s1[i];
-i++;
+concat_str[concat_index++] = s1[index];
 }
-while (s2[j] != '\0')
+for (index = 0; s2[index]; index++)
 {
-strDup[i] = s2[j];
-i++;
-j++;
+concat_str[concat_index++] = s2[index];
 }
-strDup[i] = '\0';
-return (strDup);
+return (concat_str);
 }
