@@ -27,9 +27,8 @@ size++;
 size++;
 }
 size++;
-/* allocate memory for total number of chars and
- * new line for each word
- */
+/* allocate memory for total number of chars and */
+/* new line for each word */
 strDup = malloc(sizeof(char) * size);
 if (strDup == NULL)
 {
