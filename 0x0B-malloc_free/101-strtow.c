@@ -78,7 +78,7 @@ free(strDup[--i]);
 free(strDup);
 return (NULL);
 }
-n = 0;
+m = 0;
 while (m < n)
 {
 strDup[i][m] = *str;
