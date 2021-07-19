@@ -1,5 +1,5 @@
-#ifndef DOG
-#define DOG
+#ifndef HEADER_FILE
+#define HEADER_FILE dog.h
 
 /**
  * struct dog - class of dogs
