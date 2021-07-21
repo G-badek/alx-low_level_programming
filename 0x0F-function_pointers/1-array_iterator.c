@@ -15,12 +15,12 @@ if (action != NULL)
 {
 while (i < size)
 {
+if (array == NULL)
+{
+return;
+}
 action(array[i]);
 i++;
 }
-}
-else
-{
-return;
 }
 }
