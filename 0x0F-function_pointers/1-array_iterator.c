@@ -19,4 +19,8 @@ action(array[i]);
 i++;
 }
 }
+else
+{
+return;
+}
 }
