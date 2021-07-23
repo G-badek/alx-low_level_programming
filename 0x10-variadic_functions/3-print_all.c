@@ -49,7 +49,7 @@ printf("%f", va_arg(args, double));
  * print_all - Print any type of given argument
  * @format: List of types of arguments being passed
  */
-void print_all(const char * const formar, ...)
+void print_all(const char * const format, ...)
 {
 va_list args;
 char *sep;
