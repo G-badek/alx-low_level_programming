@@ -18,27 +18,32 @@ for (i = 0; s[i]; i++)
 return (i);
 }
 
-
 /**
- * _strdup - recreation of string duplicate function
- * @src: source of string to duplicate
- * Return: pointer to malloc'd space with copied string
+ * add_node_end - adds a new node at the end of a list_t list.
+ * @head: linked lists
+ * @str: string to linked
+ * Return: new node
  */
-void *_strdup(const char *src)
+list_t *add_node_end(list_t **head, const char *str)
 {
-int len, i;
-char *dest;
-
-len = _strlen(src);
-dest = malloc((len + 1) * sizeof(char));
-if (dest == NULL)
+list_t *newNode = (list_t *)malloc(sizeof(list_t));
+list_t *lastNode = (*head);
+if (!newNode)
 {
 return (NULL);
 }
-for (i = 0; src[i]; i++)
+newNode->str = strdup(str);
+newNode->len = _strlen(str);
+newNode->next = NULL;
+if (!(*head))
 {
-dest[i] = src[i];
+(*head) = newNode;
+return (*head);
 }
-dest[i] = '\0';
-return (dest);
+while (lastNode->next)
+{
+lastNode = lastNode->next;
+}
+lastNode->next = newNode;
+return (newNode);
 }
