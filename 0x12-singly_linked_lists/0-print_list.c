@@ -8,19 +8,22 @@
  */
 size_t print_list(const list_t *h)
 {
-int counter = 0;
-while (h != NULL)
+size_t print_list(const list_t *h)
 {
-if (h->str != NULL)
+unsigned int i = 0;
+while (h)
 {
-printf("[%d] %s\n", h->len, h->str);
+if (!h->str)
+{
+printf("[0] (nil)\n");
 }
 else
 {
-printf("[0] (nil)\n");
-counter++;
+printf("[%u] %s\n", h->len, h->str);
+}
 h = h->next;
+++i;
 }
+return (i);
 }
-return (counter);
 }
