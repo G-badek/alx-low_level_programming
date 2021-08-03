@@ -14,7 +14,8 @@ if (!*head)
 return (0);
 }
 newNode = (*head)->next;
-value = (*head);
+value = (*head)->n;
+free(*head);
 (*head) = newNode;
 return (value);
 }
