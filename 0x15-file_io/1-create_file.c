@@ -1,10 +1,4 @@
-#include "main.h"
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
  * _strlen_recursion - returns the length of a string
