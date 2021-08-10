@@ -47,7 +47,7 @@ if (w == -1)
 {
 return (-1);
 }
-c = close (file);
+c = close(file);
 if (c == -1)
 {
 return (-1);
