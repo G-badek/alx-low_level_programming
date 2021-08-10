@@ -33,7 +33,7 @@ if (!filename)
 {
 return (-1);
 }
-file = open(filename, O_RDWR | O_TRUNC, 0600);
+file = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (file == -1)
 {
 return (-1);
